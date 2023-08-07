@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 const App = () => {
     return (
@@ -9,11 +10,11 @@ const App = () => {
                 <div className='todo-input'>
                     <div className='todo-input-item'>
                         <label>Title</label>
-                        <input type='text' placeholder='Enter the Work Assignment to be completed!' />
+                        <input type='text' placeholder='Work Assignment to be completed!' />
                     </div>
                     <div className='todo-input-item'>
                         <label>Description</label>
-                        <input type='text' placeholder='Enter the Description of work.' />
+                        <input type='text' placeholder='Description of work.' />
                     </div>
                     <div className='todo-input-item'>
                         <button type='button' className='primarybtn'>Add</button>
