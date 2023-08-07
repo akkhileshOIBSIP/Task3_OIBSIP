@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
+    const [screen, setScreen] = useState(false);
     return (
         <div className='App'>
             <h1>ProTask: Empowering Productivity - Your Innovative To-Do Web App</h1>
@@ -22,8 +23,8 @@ const App = () => {
                 </div>
 
                 <div className='btn-area'>
-                    <button>To-Do</button>
-                    <button>Completed</button>
+                    <button className={`secondarybtn ${screen === false && 'active'}`} onClick={() => setScreen(false)}>To-Do</button>
+                    <button className={`secondarybtn ${screen === true && 'active'}`} onClick={() => setScreen(true)}>Completed</button>
                 </div>
 
                 <div className='todo-list'>
